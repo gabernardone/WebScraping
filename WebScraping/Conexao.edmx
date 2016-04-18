@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LEILAOModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Material">
+          <Key>
+            <PropertyRef Name="codigo" />
+          </Key>
+          <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="urlFoto" Type="varchar(max)" />
+          <Property Name="descricao" Type="varchar(max)" />
+          <Property Name="lanceInicial" Type="varchar" MaxLength="20" />
+          <Property Name="maiorLance" Type="varchar" MaxLength="20" />
+          <Property Name="quantidadeLances" Type="int" />
+        </EntityType>
+        <EntityContainer Name="LEILAOModelStoreContainer">
+          <EntitySet Name="Material" EntityType="Self.Material" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LEILAOModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Material">
+          <Key>
+            <PropertyRef Name="codigo" />
+          </Key>
+          <Property Name="codigo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="urlFoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="descricao" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="lanceInicial" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="maiorLance" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="quantidadeLances" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="LEILAOEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Material" EntityType="Self.Material" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LEILAOModelStoreContainer" CdmEntityContainer="LEILAOEntities">
+          <EntitySetMapping Name="Material">
+            <EntityTypeMapping TypeName="LEILAOModel.Material">
+              <MappingFragment StoreEntitySet="Material">
+                <ScalarProperty Name="codigo" ColumnName="codigo" />
+                <ScalarProperty Name="urlFoto" ColumnName="urlFoto" />
+                <ScalarProperty Name="descricao" ColumnName="descricao" />
+                <ScalarProperty Name="lanceInicial" ColumnName="lanceInicial" />
+                <ScalarProperty Name="maiorLance" ColumnName="maiorLance" />
+                <ScalarProperty Name="quantidadeLances" ColumnName="quantidadeLances" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

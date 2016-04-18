@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LEILAOModelStoreContainer" CdmEntityContainer="LEILAOEntities">
+    <EntitySetMapping Name="Material">
+      <EntityTypeMapping TypeName="LEILAOModel.Material">
+        <MappingFragment StoreEntitySet="Material">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="urlFoto" ColumnName="urlFoto" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="lanceInicial" ColumnName="lanceInicial" />
+          <ScalarProperty Name="maiorLance" ColumnName="maiorLance" />
+          <ScalarProperty Name="quantidadeLances" ColumnName="quantidadeLances" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

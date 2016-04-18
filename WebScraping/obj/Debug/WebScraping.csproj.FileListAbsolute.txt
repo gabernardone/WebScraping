@@ -1,0 +1,13 @@
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\WebScraping.exe.config
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\WebScraping.exe
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\WebScraping.pdb
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\HtmlAgilityPack.dll
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\HtmlAgilityPack.xml
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\obj\Debug\WebScraping.csprojResolveAssemblyReference.cache
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\obj\Debug\WebScraping.exe
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\obj\Debug\WebScraping.pdb
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\EntityFramework.dll
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\EntityFramework.xml
+C:\Users\IT4SOLUTION\Desktop\WebScraping\WebScraping\bin\Debug\EntityFramework.SqlServer.xml
